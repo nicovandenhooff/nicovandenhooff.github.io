@@ -1,0 +1,115 @@
+/* Base Styles */
+body {
+    background-color: #000;
+    /* Black background to mimic a terminal */
+    color: #0f0;
+    /* Green text color */
+    font-family: 'Courier New', Courier, monospace;
+    /* Monospace font for terminal feel */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.terminal {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main Title Styling */
+.main-title {
+    color: #0f0;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Command Line Styling */
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 5px;
+}
+
+.cursor {
+    width: 10px;
+    height: 20px;
+    background-color: #0f0;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#typed-command {
+    white-space: pre-wrap;
+    /* Preserve spaces and line breaks */
+}
+
+/* Terminal Content Styling */
+#terminal-content {
+    margin-top: 20px;
+}
+
+/* Section Styling */
+.section {
+    margin-top: 40px;
+    /* Spacing between sections */
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #0f0;
+    font-size: 1.5em;
+}
+
+.section p {
+    margin: 0;
+}
+
+/* Social Links Styling */
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #0f0;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* Hover and Focus States */
+.social-links a:hover,
+.social-links a:focus {
+    color: #fff;
+}
+
+/* Accessibility Focus Styles */
+a:focus {
+    outline: 2px dashed #0f0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .terminal {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .main-title {
+        font-size: 1.5em;
+    }
+
+    .section h2 {
+        font-size: 1.2em;
+    }
+}
